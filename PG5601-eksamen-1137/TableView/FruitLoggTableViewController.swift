@@ -18,6 +18,7 @@ class FruitLoggTableViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         do{
             fruitLogg = try context.fetch(FruitLogg.fetchRequest())
+            self.tableView.reloadData()
         }catch{
             print("ohno")
         }
