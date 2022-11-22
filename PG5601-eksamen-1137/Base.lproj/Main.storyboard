@@ -489,7 +489,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fcz-eJ-tJl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="565" y="1260"/>
+            <point key="canvasLocation" x="1398" y="1260"/>
         </scene>
         <!--Fruit Collection View Controller-->
         <scene sceneID="QY8-a3-IiL">

@@ -49,7 +49,7 @@ class FruitDetailViewController: UIViewController {
         
         let sugarD = Double(sugarDouble)
         if sugarD > 10 {
-            UIView.animate(withDuration: 0.5, delay: 0, options: [.repeat,.autoreverse, .allowUserInteraction], animations: {
+            UIView.animate(withDuration: 0.5, delay: 0, options: [.repeat, .autoreverse, .allowUserInteraction], animations: {
                 self.view.backgroundColor = .red
                 self.sugarAlert.alpha = 1
             }, completion: nil)
@@ -92,7 +92,8 @@ class FruitDetailViewController: UIViewController {
             }catch{
                 print("kl")
             }
-           })
+        })
+        
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
         
         alertController.addAction(selectAction)

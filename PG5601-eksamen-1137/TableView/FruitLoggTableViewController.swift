@@ -35,7 +35,7 @@ class FruitLoggTableViewController: UIViewController {
     
     private let timeFormat: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_gb")
+        formatter.locale = Locale(identifier: "no_NO")
         formatter.dateFormat = "hh:mm:ss"
         return formatter
     }()
@@ -58,6 +58,4 @@ extension FruitLoggTableViewController : UITableViewDataSource, UITableViewDeleg
         
         return cell
     }
-    
-    
 }
