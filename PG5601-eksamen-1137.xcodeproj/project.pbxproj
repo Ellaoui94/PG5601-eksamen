@@ -27,11 +27,11 @@
 		1440A03F29223B7D00DB939C /* FruitSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440A03E29223B7D00DB939C /* FruitSection.swift */; };
 		1440A04129223F5B00DB939C /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440A04029223F5B00DB939C /* FruitData.swift */; };
 		148A97952924F3360047FBBC /* FruitCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A97942924F3360047FBBC /* FruitCollectionViewController.swift */; };
-		148A97B1292C0AD50047FBBC /* PG5601_eksamen_1137.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 148A97AF292C0AD50047FBBC /* PG5601_eksamen_1137.xcdatamodeld */; };
 		148A97B4292C0B490047FBBC /* FruitLogg+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A97B2292C0B490047FBBC /* FruitLogg+CoreDataClass.swift */; };
 		148A97B5292C0B490047FBBC /* FruitLogg+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A97B3292C0B490047FBBC /* FruitLogg+CoreDataProperties.swift */; };
 		148A97B8292C2B4A0047FBBC /* FruitLoggTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A97B7292C2B4A0047FBBC /* FruitLoggTableViewController.swift */; };
 		148A97BA292C2B660047FBBC /* FruitLoggTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A97B9292C2B660047FBBC /* FruitLoggTableViewCell.swift */; };
+		148A97BF292E767A0047FBBC /* PG5601_eksamen_1137.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 148A97BD292E767A0047FBBC /* PG5601_eksamen_1137.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,11 +76,11 @@
 		1440A03E29223B7D00DB939C /* FruitSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitSection.swift; sourceTree = "<group>"; };
 		1440A04029223F5B00DB939C /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
 		148A97942924F3360047FBBC /* FruitCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCollectionViewController.swift; sourceTree = "<group>"; };
-		148A97B0292C0AD50047FBBC /* PG5601_eksamen_1137.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PG5601_eksamen_1137.xcdatamodel; sourceTree = "<group>"; };
 		148A97B2292C0B490047FBBC /* FruitLogg+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FruitLogg+CoreDataClass.swift"; sourceTree = "<group>"; };
 		148A97B3292C0B490047FBBC /* FruitLogg+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FruitLogg+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		148A97B7292C2B4A0047FBBC /* FruitLoggTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitLoggTableViewController.swift; sourceTree = "<group>"; };
 		148A97B9292C2B660047FBBC /* FruitLoggTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitLoggTableViewCell.swift; sourceTree = "<group>"; };
+		148A97BE292E767A0047FBBC /* PG5601_eksamen_1137.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PG5601_eksamen_1137.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,7 +202,7 @@
 			children = (
 				148A97B2292C0B490047FBBC /* FruitLogg+CoreDataClass.swift */,
 				148A97B3292C0B490047FBBC /* FruitLogg+CoreDataProperties.swift */,
-				148A97AF292C0AD50047FBBC /* PG5601_eksamen_1137.xcdatamodeld */,
+				148A97BD292E767A0047FBBC /* PG5601_eksamen_1137.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -343,7 +343,7 @@
 			files = (
 				1440A0312920489E00DB939C /* FruitDetailViewController.swift in Sources */,
 				148A97952924F3360047FBBC /* FruitCollectionViewController.swift in Sources */,
-				148A97B1292C0AD50047FBBC /* PG5601_eksamen_1137.xcdatamodeld in Sources */,
+				148A97BF292E767A0047FBBC /* PG5601_eksamen_1137.xcdatamodeld in Sources */,
 				1440A034292166E000DB939C /* FruitCollectionViewCell.swift in Sources */,
 				1440A04129223F5B00DB939C /* FruitData.swift in Sources */,
 				1440A02B291FDEA300DB939C /* Fruit.swift in Sources */,
@@ -694,12 +694,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		148A97AF292C0AD50047FBBC /* PG5601_eksamen_1137.xcdatamodeld */ = {
+		148A97BD292E767A0047FBBC /* PG5601_eksamen_1137.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				148A97B0292C0AD50047FBBC /* PG5601_eksamen_1137.xcdatamodel */,
+				148A97BE292E767A0047FBBC /* PG5601_eksamen_1137.xcdatamodel */,
 			);
-			currentVersion = 148A97B0292C0AD50047FBBC /* PG5601_eksamen_1137.xcdatamodel */;
+			currentVersion = 148A97BE292E767A0047FBBC /* PG5601_eksamen_1137.xcdatamodel */;
 			path = PG5601_eksamen_1137.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -24,3 +24,5 @@ struct Nutritions: Codable {
     let calories: Double
     let sugar: Double
 }
+
+

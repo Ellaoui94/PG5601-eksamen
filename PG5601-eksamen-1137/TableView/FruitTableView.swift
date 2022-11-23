@@ -70,6 +70,7 @@ extension FruitTableView : UITableViewDataSource, UITableViewDelegate{
         
         let viewController = storyboard.instantiateViewController(withIdentifier: "FruitDetailViewController") as! FruitDetailViewController
         let fruitsData = FruitData.fruits[indexPath.row]
+        
                 
         viewController.nameString = fruitsData.name
         viewController.familyString = fruitsData.family

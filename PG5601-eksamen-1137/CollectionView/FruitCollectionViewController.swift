@@ -74,10 +74,6 @@ extension FruitCollectionViewController : UICollectionViewDataSource, UICollecti
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: fruitCell, for: indexPath) as! FruitCollectionViewCell
         let fruitData = FruitData.fruits[indexPath.row]
         
-//        if (cell.fruitName.text != nil){
-//           
-//       }
-        
         switch indexPath.section{
         case 0: cell.fruitName.text = fruitData.genus
         case 1:  cell.fruitName.text = fruitData.family
