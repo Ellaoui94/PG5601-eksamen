@@ -51,14 +51,7 @@ extension FruitCollectionViewController : UICollectionViewDataSource, UICollecti
         let genus = FruitData.fruits.map{ $0.genus }
         let family = FruitData.fruits.map{ $0.family }
         let order = FruitData.fruits.map{ $0.order }
-//
-//        var test = ""
-//        for g in genus {
-//            if test.contains(where: test != g) < 1{
-//                test = g
-//            }
-//            print(test)
-//        }
+
         switch section{
         case 0: return genus.count
         case 1: return family.count

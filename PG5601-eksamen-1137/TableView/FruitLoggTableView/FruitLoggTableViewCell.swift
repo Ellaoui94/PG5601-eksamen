@@ -10,11 +10,6 @@ import UIKit
 class FruitLoggTableViewCell: UITableViewCell {
     
     @IBOutlet weak var fruitName: UILabel!
-    @IBOutlet weak var fruitDate: UILabel!
-    @IBOutlet weak var sugar: UILabel!
-    @IBOutlet weak var fat: UILabel!
-
-
 
     override func awakeFromNib() {
         super.awakeFromNib()

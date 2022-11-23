@@ -30,7 +30,7 @@ class FruitLoggTableViewController: UIViewController {
     private let dateFormat: DateFormatter = {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "no_NO")
-        formatter.dateFormat = "dd/MM/yyyy"
+        formatter.dateFormat = "EEEE, dd/MM/yyyy"
         return formatter
     }()
     
@@ -47,7 +47,6 @@ class FruitLoggTableViewController: UIViewController {
                     self.fruitLoggSectionArray[index].fruitLogg.append(loggItem)
                 }
             }
-            self.tableView.reloadData()
         }catch{
             print("ohno")
         }
@@ -59,7 +58,7 @@ class FruitLoggTableViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        
+        self.tableView.reloadData()
     }
 }
 
@@ -74,7 +73,37 @@ extension FruitLoggTableViewController : UITableViewDataSource, UITableViewDeleg
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return dateFormat.string(from: fruitLoggSectionArray[section].date)
+        return dateFormat.string(from: fruitLoggSectionArray[section].date).capitalized
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footer = FruitLoggSectionFooterViewController()
+        
+        var caloriesSum = 0.0
+        var carbohydratesSum = 0.0
+        var fatSum = 0.0
+        var proteinSum = 0.0
+        var sugarSum = 0.0
+
+        for fruit in fruitLoggSectionArray[section].fruitLogg{
+            caloriesSum += fruit.calories
+            carbohydratesSum += fruit.carbohydrates
+            fatSum += fruit.fat
+            proteinSum += fruit.protein
+            sugarSum += fruit.sugar
+        }
+        
+        footer.caloriesLabel.text = "Calories: \(caloriesSum)"
+        footer.carboHydratesLabel.text = "Carbohydrates: \(carbohydratesSum)"
+        footer.fatLabel.text = "Fat: \(fatSum)"
+        footer.proteinLabel.text = "Protein: \(proteinSum)"
+        footer.sugarLabel.text = "Sugar: \(sugarSum)"
+        
+        return footer
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+            return 40
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

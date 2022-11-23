@@ -9,10 +9,4 @@ import UIKit
 
 class FruitCollectionViewHeaderReusableView: UICollectionReusableView {
     @IBOutlet weak var familyHeader: UILabel!
-    
-//    func setup(_ name: String){
-//        familyHeader.text = name
-//    }
-
-    
 }
