@@ -10,7 +10,6 @@
 		14409FF8291FD74100DB939C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14409FF7291FD74100DB939C /* AppDelegate.swift */; };
 		14409FFA291FD74100DB939C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14409FF9291FD74100DB939C /* SceneDelegate.swift */; };
 		14409FFC291FD74100DB939C /* FruitTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14409FFB291FD74100DB939C /* FruitTableView.swift */; };
-		14409FFF291FD74100DB939C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14409FFD291FD74100DB939C /* Main.storyboard */; };
 		1440A004291FD74D00DB939C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1440A003291FD74D00DB939C /* Assets.xcassets */; };
 		1440A007291FD74D00DB939C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1440A005291FD74D00DB939C /* LaunchScreen.storyboard */; };
 		1440A012291FD74D00DB939C /* PG5601_eksamen_1137Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440A011291FD74D00DB939C /* PG5601_eksamen_1137Tests.swift */; };
@@ -24,7 +23,6 @@
 		1440A035292166E000DB939C /* FruitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1440A033292166E000DB939C /* FruitCollectionViewCell.xib */; };
 		1440A03C29223AC100DB939C /* FruitCollectionViewHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440A03A29223AC100DB939C /* FruitCollectionViewHeaderReusableView.swift */; };
 		1440A03D29223AC100DB939C /* FruitCollectionViewHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1440A03B29223AC100DB939C /* FruitCollectionViewHeaderReusableView.xib */; };
-		1440A03F29223B7D00DB939C /* FruitSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440A03E29223B7D00DB939C /* FruitSection.swift */; };
 		1440A04129223F5B00DB939C /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440A04029223F5B00DB939C /* FruitData.swift */; };
 		148A97952924F3360047FBBC /* FruitCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A97942924F3360047FBBC /* FruitCollectionViewController.swift */; };
 		148A97B4292C0B490047FBBC /* FruitLogg+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A97B2292C0B490047FBBC /* FruitLogg+CoreDataClass.swift */; };
@@ -35,6 +33,9 @@
 		148A97C5292E8F5A0047FBBC /* FruitLoggSectionFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A97C3292E8F5A0047FBBC /* FruitLoggSectionFooterViewController.swift */; };
 		148A97C6292E8F5A0047FBBC /* FruitLoggSectionFooterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 148A97C4292E8F5A0047FBBC /* FruitLoggSectionFooterViewController.xib */; };
 		148A97C8292EDC850047FBBC /* FruitLoggSectionFooterCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A97C7292EDC850047FBBC /* FruitLoggSectionFooterCustomView.swift */; };
+		14E3FCE1292FBB45005A5908 /* FruitRainFall.sks in Resources */ = {isa = PBXBuildFile; fileRef = 14E3FCDF292FBB45005A5908 /* FruitRainFall.sks */; };
+		14E3FCE6292FDC61005A5908 /* EmojiRain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E3FCE5292FDC61005A5908 /* EmojiRain.swift */; };
+		14E3FCE929311895005A5908 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E3FCE829311895005A5908 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +60,6 @@
 		14409FF7291FD74100DB939C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14409FF9291FD74100DB939C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		14409FFB291FD74100DB939C /* FruitTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTableView.swift; sourceTree = "<group>"; };
-		14409FFE291FD74100DB939C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1440A003291FD74D00DB939C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1440A006291FD74D00DB939C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1440A008291FD74D00DB939C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,7 +76,6 @@
 		1440A033292166E000DB939C /* FruitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitCollectionViewCell.xib; sourceTree = "<group>"; };
 		1440A03A29223AC100DB939C /* FruitCollectionViewHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCollectionViewHeaderReusableView.swift; sourceTree = "<group>"; };
 		1440A03B29223AC100DB939C /* FruitCollectionViewHeaderReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitCollectionViewHeaderReusableView.xib; sourceTree = "<group>"; };
-		1440A03E29223B7D00DB939C /* FruitSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitSection.swift; sourceTree = "<group>"; };
 		1440A04029223F5B00DB939C /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
 		148A97942924F3360047FBBC /* FruitCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCollectionViewController.swift; sourceTree = "<group>"; };
 		148A97B2292C0B490047FBBC /* FruitLogg+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FruitLogg+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -87,6 +86,9 @@
 		148A97C3292E8F5A0047FBBC /* FruitLoggSectionFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitLoggSectionFooterViewController.swift; sourceTree = "<group>"; };
 		148A97C4292E8F5A0047FBBC /* FruitLoggSectionFooterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitLoggSectionFooterViewController.xib; sourceTree = "<group>"; };
 		148A97C7292EDC850047FBBC /* FruitLoggSectionFooterCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitLoggSectionFooterCustomView.swift; sourceTree = "<group>"; };
+		14E3FCDF292FBB45005A5908 /* FruitRainFall.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FruitRainFall.sks; sourceTree = "<group>"; };
+		14E3FCE5292FDC61005A5908 /* EmojiRain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRain.swift; sourceTree = "<group>"; };
+		14E3FCE829311895005A5908 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,15 +139,15 @@
 		14409FF6291FD74100DB939C /* PG5601-eksamen-1137 */ = {
 			isa = PBXGroup;
 			children = (
-				148A97B6292C152D0047FBBC /* CoreData */,
+				14E3FCDE292FBAFA005A5908 /* SpriteFiles */,
 				1440A0462923145A00DB939C /* Model */,
 				1440A0452923143300DB939C /* CollectionView */,
 				1440A044292313CA00DB939C /* TableView */,
-				14409FF7291FD74100DB939C /* AppDelegate.swift */,
+				14E3FCE72930105F005A5908 /* DetailViewController */,
 				14409FF9291FD74100DB939C /* SceneDelegate.swift */,
-				1440A0302920489E00DB939C /* FruitDetailViewController.swift */,
-				14409FFD291FD74100DB939C /* Main.storyboard */,
+				14409FF7291FD74100DB939C /* AppDelegate.swift */,
 				1440A003291FD74D00DB939C /* Assets.xcassets */,
+				14E3FCE829311895005A5908 /* Main.storyboard */,
 				1440A005291FD74D00DB939C /* LaunchScreen.storyboard */,
 				1440A008291FD74D00DB939C /* Info.plist */,
 				1440A02D29201A1300DB939C /* FruitTableViewCell.xib */,
@@ -195,7 +197,7 @@
 		1440A0462923145A00DB939C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1440A03E29223B7D00DB939C /* FruitSection.swift */,
+				148A97B6292C152D0047FBBC /* CoreData */,
 				1440A02A291FDEA200DB939C /* Fruit.swift */,
 				1440A04029223F5B00DB939C /* FruitData.swift */,
 			);
@@ -222,6 +224,23 @@
 				148A97C7292EDC850047FBBC /* FruitLoggSectionFooterCustomView.swift */,
 			);
 			path = FruitLoggTableView;
+			sourceTree = "<group>";
+		};
+		14E3FCDE292FBAFA005A5908 /* SpriteFiles */ = {
+			isa = PBXGroup;
+			children = (
+				14E3FCDF292FBB45005A5908 /* FruitRainFall.sks */,
+			);
+			path = SpriteFiles;
+			sourceTree = "<group>";
+		};
+		14E3FCE72930105F005A5908 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1440A0302920489E00DB939C /* FruitDetailViewController.swift */,
+				14E3FCE5292FDC61005A5908 /* EmojiRain.swift */,
+			);
+			path = DetailViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,9 +350,10 @@
 				1440A02F29201A1300DB939C /* FruitTableViewCell.xib in Resources */,
 				1440A035292166E000DB939C /* FruitCollectionViewCell.xib in Resources */,
 				1440A03D29223AC100DB939C /* FruitCollectionViewHeaderReusableView.xib in Resources */,
+				14E3FCE929311895005A5908 /* Main.storyboard in Resources */,
 				1440A007291FD74D00DB939C /* LaunchScreen.storyboard in Resources */,
 				1440A004291FD74D00DB939C /* Assets.xcassets in Resources */,
-				14409FFF291FD74100DB939C /* Main.storyboard in Resources */,
+				14E3FCE1292FBB45005A5908 /* FruitRainFall.sks in Resources */,
 				148A97C6292E8F5A0047FBBC /* FruitLoggSectionFooterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,13 +387,13 @@
 				1440A04129223F5B00DB939C /* FruitData.swift in Sources */,
 				1440A02B291FDEA300DB939C /* Fruit.swift in Sources */,
 				148A97B5292C0B490047FBBC /* FruitLogg+CoreDataProperties.swift in Sources */,
-				1440A03F29223B7D00DB939C /* FruitSection.swift in Sources */,
 				14409FFC291FD74100DB939C /* FruitTableView.swift in Sources */,
 				1440A03C29223AC100DB939C /* FruitCollectionViewHeaderReusableView.swift in Sources */,
 				1440A02E29201A1300DB939C /* FruitTableViewCell.swift in Sources */,
 				148A97C8292EDC850047FBBC /* FruitLoggSectionFooterCustomView.swift in Sources */,
 				148A97B8292C2B4A0047FBBC /* FruitLoggTableViewController.swift in Sources */,
 				14409FF8291FD74100DB939C /* AppDelegate.swift in Sources */,
+				14E3FCE6292FDC61005A5908 /* EmojiRain.swift in Sources */,
 				148A97BA292C2B660047FBBC /* FruitLoggTableViewCell.swift in Sources */,
 				14409FFA291FD74100DB939C /* SceneDelegate.swift in Sources */,
 				148A97B4292C0B490047FBBC /* FruitLogg+CoreDataClass.swift in Sources */,
@@ -413,14 +433,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		14409FFD291FD74100DB939C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14409FFE291FD74100DB939C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1440A005291FD74D00DB939C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

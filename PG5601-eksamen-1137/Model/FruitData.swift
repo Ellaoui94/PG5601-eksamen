@@ -29,20 +29,20 @@ class FruitData{
     
     static let shared = FruitData()
     
-    private let family: FruitSection = {
-        .family(Dictionary(grouping: fruits) { $0.family })
-    }()
-    
-    private let genus: FruitSection = {
-        .genus(Dictionary(grouping: fruits, by: \.genus).filter{$0.value.count > 1})
-    }()
-    
-    private let order: FruitSection = {
-        .order(Dictionary(grouping: fruits, by: \.order).filter{$0.value.count > 1})
-    }()
-    
-    var filteredData: [FruitSection] {
-        [family, genus, order]
-    }
+//    private let family: FruitSection = {
+//        .family(Dictionary(grouping: fruits) { $0.family })
+//    }()
+//    
+//    private let genus: FruitSection = {
+//        .genus(Dictionary(grouping: fruits, by: \.genus).filter{$0.value.count > 1})
+//    }()
+//    
+//    private let order: FruitSection = {
+//        .order(Dictionary(grouping: fruits, by: \.order).filter{$0.value.count > 1})
+//    }()
+//    
+//    var filteredData: [FruitSection] {
+//        [family, genus, order]
+//    }
 
 }

@@ -21,6 +21,9 @@ class FruitDetailViewController: UIViewController {
     @IBOutlet weak var sugarAlert: UILabel!
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    var emojiRain: EmojiRain!
+
 
     var nameString = ""
     var familyString = ""
@@ -31,6 +34,9 @@ class FruitDetailViewController: UIViewController {
     var fatDouble = 0.0
     var caloreisDouble = 0.0
     var sugarDouble = 0.0
+    
+    var reloadClosure: ((String) -> ())?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,10 +60,25 @@ class FruitDetailViewController: UIViewController {
                 self.sugarAlert.alpha = 1
             }, completion: nil)
         }
+        
+        emojiRain = EmojiRain(view: self.view)
+        emojiRain.fruitName = nameString
+        
+        switch nameString{
+        case "Orange":
+            emojiRain.emoji = "🍊"
+        case "Banana":
+            emojiRain.emoji = "🍌"
+        default:
+            emojiRain.emoji = "💯"
+        }
+        emojiRain.start()
     }
     
 //    let alert = MyAlert()
-    
+    @IBAction func startButtonTapped(sender: UIButton) {
+        emojiRain.start()
+    }
 //    not used yet, maybe l8r?
     private let timeFormat: DateFormatter = {
         let formatter = DateFormatter()

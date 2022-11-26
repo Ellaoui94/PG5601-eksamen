@@ -36,6 +36,7 @@ class FruitLoggTableViewController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
+        fruitLoggSectionArray.removeAll()
         do{
            let fruitLogg = try context.fetch(FruitLogg.fetchRequest())
             
@@ -50,6 +51,7 @@ class FruitLoggTableViewController: UIViewController {
         }catch{
             print("ohno")
         }
+        self.tableView.reloadData()
     }
 
     let fruitLoggCell = "fruitLoggCell"
@@ -58,7 +60,6 @@ class FruitLoggTableViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        self.tableView.reloadData()
     }
 }
 
@@ -94,7 +95,7 @@ extension FruitLoggTableViewController : UITableViewDataSource, UITableViewDeleg
         }
         
         footer.caloriesLabel.text = "Calories: \(caloriesSum)"
-        footer.carboHydratesLabel.text = "Carbohydrates: \(carbohydratesSum)"
+        footer.carboHydratesLabel.text = "Carbs: \(carbohydratesSum)"
         footer.fatLabel.text = "Fat: \(fatSum)"
         footer.proteinLabel.text = "Protein: \(proteinSum)"
         footer.sugarLabel.text = "Sugar: \(sugarSum)"
