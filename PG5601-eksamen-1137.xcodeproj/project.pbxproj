@@ -34,7 +34,6 @@
 		148A97C8292EDC850047FBBC /* FruitLoggSectionFooterCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A97C7292EDC850047FBBC /* FruitLoggSectionFooterCustomView.swift */; };
 		14E3FCE1292FBB45005A5908 /* FruitRainFall.sks in Resources */ = {isa = PBXBuildFile; fileRef = 14E3FCDF292FBB45005A5908 /* FruitRainFall.sks */; };
 		14E3FCE6292FDC61005A5908 /* EmojiRain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E3FCE5292FDC61005A5908 /* EmojiRain.swift */; };
-		14E3FCE929311895005A5908 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E3FCE829311895005A5908 /* Main.storyboard */; };
 		14E3FCEC29327239005A5908 /* PG5601_eksamen_1137.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14E3FCEA29327239005A5908 /* PG5601_eksamen_1137.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -87,7 +86,6 @@
 		148A97C7292EDC850047FBBC /* FruitLoggSectionFooterCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitLoggSectionFooterCustomView.swift; sourceTree = "<group>"; };
 		14E3FCDF292FBB45005A5908 /* FruitRainFall.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FruitRainFall.sks; sourceTree = "<group>"; };
 		14E3FCE5292FDC61005A5908 /* EmojiRain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRain.swift; sourceTree = "<group>"; };
-		14E3FCE829311895005A5908 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		14E3FCEB29327239005A5908 /* PG5601_eksamen_1137.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PG5601_eksamen_1137.xcdatamodel; sourceTree = "<group>"; };
 		14E3FD052932DB31005A5908 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,7 +145,6 @@
 				1440A0452923143300DB939C /* CollectionView */,
 				1440A044292313CA00DB939C /* TableView */,
 				14E3FCE72930105F005A5908 /* DetailViewController */,
-				14E3FCE829311895005A5908 /* Main.storyboard */,
 				14409FF9291FD74100DB939C /* SceneDelegate.swift */,
 				14409FF7291FD74100DB939C /* AppDelegate.swift */,
 				1440A008291FD74D00DB939C /* Info.plist */,
@@ -368,7 +365,6 @@
 				1440A02F29201A1300DB939C /* FruitTableViewCell.xib in Resources */,
 				1440A035292166E000DB939C /* FruitCollectionViewCell.xib in Resources */,
 				1440A03D29223AC100DB939C /* FruitCollectionViewHeaderReusableView.xib in Resources */,
-				14E3FCE929311895005A5908 /* Main.storyboard in Resources */,
 				1440A007291FD74D00DB939C /* LaunchScreen.storyboard in Resources */,
 				1440A004291FD74D00DB939C /* Assets.xcassets in Resources */,
 				14E3FCE1292FBB45005A5908 /* FruitRainFall.sks in Resources */,
