@@ -145,6 +145,7 @@
 				1440A0452923143300DB939C /* CollectionView */,
 				1440A044292313CA00DB939C /* TableView */,
 				14E3FCE72930105F005A5908 /* DetailViewController */,
+				14E3FD052932DB31005A5908 /* Main.storyboard */,
 				14409FF9291FD74100DB939C /* SceneDelegate.swift */,
 				14409FF7291FD74100DB939C /* AppDelegate.swift */,
 				1440A008291FD74D00DB939C /* Info.plist */,
@@ -251,7 +252,6 @@
 		14E3FCEE2932D5BA005A5908 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				14E3FD052932DB31005A5908 /* Main.storyboard */,
 				1440A005291FD74D00DB939C /* LaunchScreen.storyboard */,
 				1440A003291FD74D00DB939C /* Assets.xcassets */,
 			);
