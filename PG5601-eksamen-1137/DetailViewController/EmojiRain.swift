@@ -101,7 +101,7 @@ class EmojiRain {
         //for each drop in a row
         fruitLoggArray.forEach { fruitLogg in
             let now = Date.now
-            let fromDate = Calendar.current.date(byAdding: .day, value: -30, to: Date.now)
+            let fromDate = Calendar.current.date(byAdding: .day, value: -30, to: now)
             let range = fromDate!...now
             
             if fruitLogg.name == fruitName && range.contains(fruitLogg.dateLogg!){

@@ -111,8 +111,10 @@ class FruitDetailViewController: UIViewController {
             do{
                 try context.save()
             }catch{
-                print("kl")
+                print("Could not save data")
             }
+            
+            _ = navigationController?.popViewController(animated: true)
         })
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
