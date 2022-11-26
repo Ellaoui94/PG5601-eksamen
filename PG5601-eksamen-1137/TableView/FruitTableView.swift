@@ -21,7 +21,7 @@ class FruitTableView: UIViewController{
     
     
     override func viewWillAppear(_ animated: Bool) {
-        FruitData.frutisJSON(url: url, completed: {
+        FruitData.frutisJSON(url: url, viewController: self, completed: {
             self.tableView.reloadData()
         })
     }

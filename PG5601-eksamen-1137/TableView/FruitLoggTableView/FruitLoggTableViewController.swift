@@ -49,8 +49,12 @@ class FruitLoggTableViewController: UIViewController {
                 }
             }
         }catch{
-            print("ohno")
+            let alert = UIAlertController(title: "No data", message: nil, preferredStyle: UIAlertController.Style.alert)
+            let cancelAction = UIAlertAction(title: "Ok", style: .destructive, handler: nil)
+            alert.addAction(cancelAction)
+            self.present(alert, animated: true, completion: nil)
         }
+        fruitLoggSectionArray = fruitLoggSectionArray.sorted(by: {$0.date > $1.date})
         self.tableView.reloadData()
     }
 

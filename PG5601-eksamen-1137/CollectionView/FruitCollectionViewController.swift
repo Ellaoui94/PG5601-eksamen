@@ -17,7 +17,7 @@ class FruitCollectionViewController: UIViewController {
     
 
     override func viewWillAppear(_ animated: Bool) {
-        FruitData.frutisJSON(url: url, completed: {
+        FruitData.frutisJSON(url: url, viewController: self, completed: {
             self.collectionView.reloadData()
         })
     }
@@ -109,8 +109,8 @@ extension FruitCollectionViewController : UICollectionViewDataSource, UICollecti
             type = "order"
             param = fruitData.order
         default:
-            type = ""
-            param = ""
+            type = "No type"
+            param = "No param"
         }
 
         let viewController = storyboard.instantiateViewController(withIdentifier: "FruitTableView") as! FruitTableView

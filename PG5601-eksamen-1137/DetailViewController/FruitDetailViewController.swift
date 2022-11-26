@@ -55,7 +55,7 @@ class FruitDetailViewController: UIViewController {
         
         let sugarD = Double(sugarDouble)
         if sugarD > 10 {
-            UIView.animate(withDuration: 0.5, delay: 0, options: [.repeat, .autoreverse, .allowUserInteraction], animations: {
+            UIView.animate(withDuration: 0.8, delay: 0, options: [.repeat, .autoreverse, .allowUserInteraction], animations: {
                 self.view.backgroundColor = .red
                 self.sugarAlert.alpha = 1
             }, completion: nil)
@@ -69,6 +69,34 @@ class FruitDetailViewController: UIViewController {
             emojiRain.emoji = "🍊"
         case "Banana":
             emojiRain.emoji = "🍌"
+        case "Tomato":
+            emojiRain.emoji = "🍅"
+        case "Lemon":
+            emojiRain.emoji = "🍋"
+        case "Pear":
+            emojiRain.emoji = "🍐"
+        case "Melon":
+            emojiRain.emoji = "🍈"
+        case "Watermelon":
+            emojiRain.emoji = "🍉"
+        case "Apple":
+            emojiRain.emoji = "🍎"
+        case "Grapes":
+            emojiRain.emoji = "🍇"
+        case "Strawberry":
+            emojiRain.emoji = "🍓"
+        case "Blueberry":
+            emojiRain.emoji = "🫐"
+        case "Cherry":
+            emojiRain.emoji = "🍒"
+        case "Apricot":
+            emojiRain.emoji = "🍑"
+        case "Mango":
+            emojiRain.emoji = "🥭"
+        case "Pineapple":
+            emojiRain.emoji = "🍍"
+        case "Kiwi":
+            emojiRain.emoji = "🥝"
         default:
             emojiRain.emoji = "💯"
         }
@@ -111,7 +139,10 @@ class FruitDetailViewController: UIViewController {
             do{
                 try context.save()
             }catch{
-                print("Could not save data")
+                let alert = UIAlertController(title: "No internet connection", message: nil, preferredStyle: UIAlertController.Style.alert)
+                let cancelAction = UIAlertAction(title: "OK", style: .destructive, handler: nil)
+                alert.addAction(cancelAction)
+                self.present(alert, animated: true, completion: nil)
             }
             
             _ = navigationController?.popViewController(animated: true)

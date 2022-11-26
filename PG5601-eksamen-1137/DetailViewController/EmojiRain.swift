@@ -111,11 +111,9 @@ class EmojiRain {
                 let drop = UIView()
                 let label = UILabel(frame: CGRect(x: 0,y: 0,width: 100,height: 23))  //create a label with a size
                 label.text = emoji
-                label.font.withSize(20)// set font size which you want instead of 35
-                label.transform = label.transform.scaledBy(x: 3, y: 10);
-                UIView.animate(withDuration: 1.0, animations: {
-                    label.transform = label.transform.scaledBy(x: 0.3, y: 0.35);
-                    label.font.withSize(10)// set font size which you want instead of 35
+                label.transform = label.transform.scaledBy(x: 2, y: 2);
+                UIView.animate(withDuration: 1.5, animations: {
+                    label.transform = label.transform.scaledBy(x: 0.1, y: 0.1);
                 })
                 drop.addSubview(label)
                 drop.frame = CGRect(x: newX, y: newY, width: 1.0, height: 50.0)
