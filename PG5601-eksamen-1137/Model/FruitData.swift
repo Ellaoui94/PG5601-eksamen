@@ -21,7 +21,7 @@ class FruitData{
             }
             if (error != nil) {
                 DispatchQueue.main.async {
-                    let alert = UIAlertController(title: "No internet connection", message: nil, preferredStyle: UIAlertController.Style.alert)
+                    let alert = UIAlertController(title: "Connection error!", message: "No internet connection...", preferredStyle: UIAlertController.Style.alert)
                     let cancelAction = UIAlertAction(title: "Ok", style: .destructive, handler: nil)
                     alert.addAction(cancelAction)
                     viewController.present(alert, animated: true, completion: nil)

@@ -49,7 +49,7 @@ class FruitLoggTableViewController: UIViewController {
                 }
             }
         }catch{
-            let alert = UIAlertController(title: "No data", message: nil, preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "Data base error!", message: "Could not find data..", preferredStyle: UIAlertController.Style.alert)
             let cancelAction = UIAlertAction(title: "Ok", style: .destructive, handler: nil)
             alert.addAction(cancelAction)
             self.present(alert, animated: true, completion: nil)
@@ -70,6 +70,11 @@ class FruitLoggTableViewController: UIViewController {
 extension FruitLoggTableViewController : UITableViewDataSource, UITableViewDelegate{
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        if fruitLoggSectionArray.count == 0 {
+            self.tableView.setEmptyMessage("No fruit has been eaten yet..")
+        } else {
+            self.tableView.restore()
+        }
         return fruitLoggSectionArray.count
     }
     
@@ -118,5 +123,26 @@ extension FruitLoggTableViewController : UITableViewDataSource, UITableViewDeleg
         cell.fruitName.text = fruitLoggItem.name
         
         return cell
+    }
+}
+
+extension UITableView {
+
+    func setEmptyMessage(_ message: String) {
+        let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+        messageLabel.text = message
+        messageLabel.textColor = .black
+        messageLabel.numberOfLines = 0
+        messageLabel.textAlignment = .center
+        messageLabel.font = UIFont(name: "TrebuchetMS", size: 15)
+        messageLabel.sizeToFit()
+
+        self.backgroundView = messageLabel
+        self.separatorStyle = .none
+    }
+
+    func restore() {
+        self.backgroundView = nil
+        self.separatorStyle = .singleLine
     }
 }

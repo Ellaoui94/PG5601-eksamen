@@ -139,7 +139,7 @@ class FruitDetailViewController: UIViewController {
             do{
                 try context.save()
             }catch{
-                let alert = UIAlertController(title: "No internet connection", message: nil, preferredStyle: UIAlertController.Style.alert)
+                let alert = UIAlertController(title: "Database error!", message: "Could not save data..", preferredStyle: UIAlertController.Style.alert)
                 let cancelAction = UIAlertAction(title: "OK", style: .destructive, handler: nil)
                 alert.addAction(cancelAction)
                 self.present(alert, animated: true, completion: nil)

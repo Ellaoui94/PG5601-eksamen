@@ -139,20 +139,17 @@
 		14409FF6291FD74100DB939C /* PG5601-eksamen-1137 */ = {
 			isa = PBXGroup;
 			children = (
+				14E3FCEE2932D5BA005A5908 /* Resources */,
+				14E3FCED2932D533005A5908 /* UnusedXiB */,
 				14E3FCDE292FBAFA005A5908 /* SpriteFiles */,
 				1440A0462923145A00DB939C /* Model */,
 				1440A0452923143300DB939C /* CollectionView */,
 				1440A044292313CA00DB939C /* TableView */,
 				14E3FCE72930105F005A5908 /* DetailViewController */,
+				14E3FCE829311895005A5908 /* Main.storyboard */,
 				14409FF9291FD74100DB939C /* SceneDelegate.swift */,
 				14409FF7291FD74100DB939C /* AppDelegate.swift */,
-				1440A003291FD74D00DB939C /* Assets.xcassets */,
-				14E3FCE829311895005A5908 /* Main.storyboard */,
-				1440A005291FD74D00DB939C /* LaunchScreen.storyboard */,
 				1440A008291FD74D00DB939C /* Info.plist */,
-				1440A02D29201A1300DB939C /* FruitTableViewCell.xib */,
-				1440A033292166E000DB939C /* FruitCollectionViewCell.xib */,
-				1440A03B29223AC100DB939C /* FruitCollectionViewHeaderReusableView.xib */,
 			);
 			path = "PG5601-eksamen-1137";
 			sourceTree = "<group>";
@@ -241,6 +238,25 @@
 				14E3FCE5292FDC61005A5908 /* EmojiRain.swift */,
 			);
 			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		14E3FCED2932D533005A5908 /* UnusedXiB */ = {
+			isa = PBXGroup;
+			children = (
+				1440A02D29201A1300DB939C /* FruitTableViewCell.xib */,
+				1440A033292166E000DB939C /* FruitCollectionViewCell.xib */,
+				1440A03B29223AC100DB939C /* FruitCollectionViewHeaderReusableView.xib */,
+			);
+			path = UnusedXiB;
+			sourceTree = "<group>";
+		};
+		14E3FCEE2932D5BA005A5908 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1440A005291FD74D00DB939C /* LaunchScreen.storyboard */,
+				1440A003291FD74D00DB939C /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
