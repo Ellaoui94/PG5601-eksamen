@@ -112,7 +112,7 @@ class EmojiRain {
                 let label = UILabel(frame: CGRect(x: 0,y: 0,width: 100,height: 23))  //create a label with a size
                 label.text = emoji
                 label.transform = label.transform.scaledBy(x: 2, y: 2);
-                UIView.animate(withDuration: 1.5, animations: {
+                UIView.animate(withDuration: 1.8, animations: {
                     label.transform = label.transform.scaledBy(x: 0.1, y: 0.1);
                 })
                 drop.addSubview(label)
