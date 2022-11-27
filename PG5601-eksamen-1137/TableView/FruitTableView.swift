@@ -15,8 +15,7 @@ class FruitTableView: UIViewController{
     var url = "https://fruityvice.com/api/fruit/all"
     
     var fruitMap = [String : UIColor]()
-
-
+    
     @IBOutlet var tableView: UITableView!
     
     

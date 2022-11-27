@@ -113,7 +113,7 @@ extension FruitLoggTableViewController : UITableViewDataSource, UITableViewDeleg
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-            return 40
+            return 90
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
