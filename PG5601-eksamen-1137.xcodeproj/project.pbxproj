@@ -88,7 +88,6 @@
 		14E3FCDF292FBB45005A5908 /* FruitRainFall.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FruitRainFall.sks; sourceTree = "<group>"; };
 		14E3FCE5292FDC61005A5908 /* EmojiRain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRain.swift; sourceTree = "<group>"; };
 		14E3FCEB29327239005A5908 /* PG5601_eksamen_1137.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PG5601_eksamen_1137.xcdatamodel; sourceTree = "<group>"; };
-		14E3FD0F2932DEB8005A5908 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		14E3FD10293306EC005A5908 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -254,7 +253,6 @@
 		14E3FCEE2932D5BA005A5908 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				14E3FD0F2932DEB8005A5908 /* Main.storyboard */,
 				1440A005291FD74D00DB939C /* LaunchScreen.storyboard */,
 				1440A003291FD74D00DB939C /* Assets.xcassets */,
 			);
