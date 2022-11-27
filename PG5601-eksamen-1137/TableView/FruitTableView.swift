@@ -54,7 +54,7 @@ extension FruitTableView : UITableViewDataSource, UITableViewDelegate{
         let fruit = FruitData.fruits[indexPath.row]
         
         cell.fruitName.text = fruit.name
-        //If family is in map, assign it. Else, generate random color, put in map, assign it
+        
         if (fruitMap.index(forKey: fruit.family) == nil){
             fruitMap[fruit.family] = generateRandomColor()
         }
