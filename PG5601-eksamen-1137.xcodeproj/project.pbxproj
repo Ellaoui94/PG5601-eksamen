@@ -120,6 +120,7 @@
 		14409FEB291FD74100DB939C = {
 			isa = PBXGroup;
 			children = (
+				14E3FD1229330ABC005A5908 /* readme.md */,
 				14409FF6291FD74100DB939C /* PG5601-eksamen-1137 */,
 				1440A010291FD74D00DB939C /* PG5601-eksamen-1137Tests */,
 				1440A01A291FD74D00DB939C /* PG5601-eksamen-1137UITests */,
@@ -150,7 +151,6 @@
 				14E3FD10293306EC005A5908 /* Main.storyboard */,
 				14409FF9291FD74100DB939C /* SceneDelegate.swift */,
 				14409FF7291FD74100DB939C /* AppDelegate.swift */,
-				14E3FD1229330ABC005A5908 /* readme.md */,
 				1440A008291FD74D00DB939C /* Info.plist */,
 			);
 			path = "PG5601-eksamen-1137";

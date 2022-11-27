@@ -35,8 +35,6 @@ class FruitData{
         fruitsData.resume()
         }
     
-    static let shared = FruitData()
-    
 //    private let family: FruitSection = {
 //        .family(Dictionary(grouping: fruits) { $0.family })
 //    }()

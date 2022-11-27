@@ -84,13 +84,6 @@ extension FruitTableView : UITableViewDataSource, UITableViewDelegate{
         show(viewController, sender: nil)
 
     }
-
 }
-    
 
-extension Data {
-    func asString() -> String? {
-        return String.init(data: self, encoding: .utf8)!
-    }
-}
 

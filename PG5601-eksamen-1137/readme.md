@@ -1,3 +1,0 @@
-#  <#Title#>tes
-
-Image("bokeh")
