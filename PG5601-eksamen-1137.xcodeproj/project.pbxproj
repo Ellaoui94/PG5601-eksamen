@@ -89,6 +89,7 @@
 		14E3FCE5292FDC61005A5908 /* EmojiRain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRain.swift; sourceTree = "<group>"; };
 		14E3FCEB29327239005A5908 /* PG5601_eksamen_1137.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PG5601_eksamen_1137.xcdatamodel; sourceTree = "<group>"; };
 		14E3FD10293306EC005A5908 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		14E3FD1229330ABC005A5908 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +150,7 @@
 				14E3FD10293306EC005A5908 /* Main.storyboard */,
 				14409FF9291FD74100DB939C /* SceneDelegate.swift */,
 				14409FF7291FD74100DB939C /* AppDelegate.swift */,
+				14E3FD1229330ABC005A5908 /* readme.md */,
 				1440A008291FD74D00DB939C /* Info.plist */,
 			);
 			path = "PG5601-eksamen-1137";
