@@ -103,11 +103,11 @@ extension FruitLoggTableViewController : UITableViewDataSource, UITableViewDeleg
             sugarSum += fruit.sugar
         }
         
-        footer.caloriesLabel.text = "Calories: \(caloriesSum)"
-        footer.carboHydratesLabel.text = "Carbs: \(carbohydratesSum)"
-        footer.fatLabel.text = "Fat: \(fatSum)"
-        footer.proteinLabel.text = "Protein: \(proteinSum)"
-        footer.sugarLabel.text = "Sugar: \(sugarSum)"
+        footer.caloriesLabel.text = "Calories: \(String(format: "%.2f", caloriesSum))"
+        footer.carboHydratesLabel.text = "Carbs: \(String(format: "%.2f", carbohydratesSum))"
+        footer.fatLabel.text = "Fat: \(String(format: "%.2f", fatSum))"
+        footer.proteinLabel.text = "Protein: \(String(format: "%.2f", proteinSum))"
+        footer.sugarLabel.text = "Sugar: \(String(format: "%.2f", sugarSum))"
         
         return footer
     }
@@ -144,5 +144,13 @@ extension UITableView {
     func restore() {
         self.backgroundView = nil
         self.separatorStyle = .singleLine
+    }
+}
+
+extension Double {
+    /// Rounds the double to decimal places value
+    func rounded(toPlaces places:Int) -> Double {
+        let divisor = pow(10.0, Double(places))
+        return (self * divisor).rounded() / divisor
     }
 }
