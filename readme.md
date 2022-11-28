@@ -6,7 +6,7 @@
 
 ###### Kilder og insperasjon 
 [^1]: https://stackoverflow.com/questions/55521000/how-to-generate-the-same-random-color-in-a-table-view-for-a-table-view-row-for-a
-[^2]: https://www.youtube.com/watch?v=8dn9HzNigm8&t=891s og Student prosjketet til læreren
+[^2]: https://www.youtube.com/watch?v=8dn9HzNigm8&t=891s Student prosjektet fra foreleser
 
 # Oppgave 2
 ## FruitDetailView
@@ -19,6 +19,7 @@
 * Med inspirasjon fra youtube, har jeg laget CollectionView med 3 seksjoner. Jeg valgte å ikke gjøre denne delen dynamisk siden det finnes kun 3 forksjellige kategorier. I de senere metodene, så har jeg en switch for sjekke hvilken sjeksjon jeg er i for å gi dem riktig data. Hver seksjon har en gitt header tekst. Klassene og identifier for header og celler, har jeg angit i storyboard.[^4] 
 
     Når man trykker på en celle så går jeg tilbake til FruitTableView fra oppg.1 hvor jeg endrer url varibalen til et nytt api kall med gitt type og navnet av typen.
+    
 * Siden det er mange frukter under samme kategori, vil jeg kunne få duplikat celler med samme navn. For å fikse dette har jeg benyttet meg av Set for å gjøre de unike, også konverterer jeg dem til en array for å kunne bruke indexPath.row på de.[^5]
 
 [^4]: https://www.youtube.com/watch?v=y1uXXVUu43o&t=1979s, https://www.youtube.com/watch?v=TQOhsyWUhwg&t=1048s
@@ -30,6 +31,10 @@
 * Først så valgte jeg å bruke en custom alert view i en annen viewController. Men så bestmete jeg meg for å lage en simpel alert i detailViewController, med nil som funksjon for å avbryte, og lagring av loggen i tillegg til popViewController som funksjon når man trykker save. Dato og tid blir automatisk satt til det tidspunktet man trykker på spis frukt knappen.[^6]
 
     Jeg har valgt å formatere dato feltet til norsk dato og tid format.[^7]
+
+* For CoreData så har laged en entity som heter FruitLogg. FruitLogg har næringene, navn og dato som felter. Create NSMangedObject Subclass lager filer for meg slik at jeg bruke feltene i databasen. 
+
+    I detailView så lagde jeg en context variabel som bruker AppDelegate sitt persistentContainer variabel som ble lagt til da jeg huket av på CoreData boksen når jeg lagde prosjektet. Nå jeg har valgt et dato og trykker på save, så blir feltene fra FruitLogg angit og larget i coreData. Jeg har også lagt til en alert i catch hvis noe skulle gå galt.[^8] 
     
 Insperasjon custom alert:
 - https://www.youtube.com/watch?v=670h22_ZsvY&t=1432s
@@ -37,6 +42,7 @@ Insperasjon custom alert:
 
 [^6]: https://stackoverflow.com/questions/49547677/swift-ios-adding-date-picker-to-an-alert-in-swift-to-be-saved-to-local-db-using
 [^7]: https://stackoverflow.com/questions/11151187/show-time-in-12-and-24-hour-format-in-uidatepicker-on-the-basis-of-app-settings
+[8^]: https://www.youtube.com/watch?v=rjHBINtpKA8&t=727s og Student prosjektet fra foreleser
     
 ## FruitLoggTableView
     
