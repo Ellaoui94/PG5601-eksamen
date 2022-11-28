@@ -12,9 +12,7 @@
 ## FruitDetailView
 * For animasjon av bakgrunn og tekst, har jeg lagt til en UIVew.animte som repeteres hele tiden, og for at det ikke skal være irriterende å for øyet, så har jeg forsøkt å ha duration på 0.8. Jeg måtte også ha med .allowUserInteraction for at man skal kunne trykke på knapper mens animasjonen er i gang.[^3] 
 
-[^3]: https://stackoverflow.com/questions/60152701/uiview-animation-options-repeat-count ,
-    - https://stackoverflow.com/questions/6224468/blinking-effect-on-uilabel ,
-    - https://stackoverflow.com/questions/49547677/swift-ios-adding-date-picker-to-an-alert-in-swift-to-be-saved-to-local-db-using
+[^3]: https://stackoverflow.com/questions/60152701/uiview-animation-options-repeat-count , https://stackoverflow.com/questions/6224468/blinking-effect-on-uilabel , https://stackoverflow.com/questions/49547677/swift-ios-adding-date-picker-to-an-alert-in-swift-to-be-saved-to-local-db-using
     
 # Oppgave 3
 ## FruitCollectionView
