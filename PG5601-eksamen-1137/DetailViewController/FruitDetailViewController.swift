@@ -34,10 +34,7 @@ class FruitDetailViewController: UIViewController {
     var fatDouble = 0.0
     var caloreisDouble = 0.0
     var sugarDouble = 0.0
-    
-    var reloadClosure: ((String) -> ())?
-
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -53,8 +50,7 @@ class FruitDetailViewController: UIViewController {
         
         sugarAlert.alpha = 0
         
-        let sugarD = Double(sugarDouble)
-        if sugarD > 10 {
+        if sugarDouble > 10 {
             UIView.animate(withDuration: 0.8, delay: 0, options: [.repeat, .autoreverse, .allowUserInteraction], animations: {
                 self.view.backgroundColor = .red
                 self.sugarAlert.alpha = 1
@@ -134,17 +130,9 @@ class FruitDetailViewController: UIViewController {
         emojiRain.start()
     }
     
-//    let alert = MyAlert()
     @IBAction func startButtonTapped(sender: UIButton) {
         emojiRain.start()
     }
-//    not used yet, maybe l8r?
-    private let timeFormat: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_gb")
-        formatter.dateFormat = "hh:mm:ss"
-        return formatter
-    }()
 
     @IBAction func didTapButton(){
         let myDatePicker: UIDatePicker = UIDatePicker()
