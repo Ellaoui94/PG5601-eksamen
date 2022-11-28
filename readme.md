@@ -42,9 +42,10 @@ Insperasjon custom alert:
 
 [^6]: https://stackoverflow.com/questions/49547677/swift-ios-adding-date-picker-to-an-alert-in-swift-to-be-saved-to-local-db-using
 [^7]: https://stackoverflow.com/questions/11151187/show-time-in-12-and-24-hour-format-in-uidatepicker-on-the-basis-of-app-settings
-[8^]: https://www.youtube.com/watch?v=rjHBINtpKA8&t=727s og Student prosjektet fra foreleser
+[^8]: https://www.youtube.com/watch?v=rjHBINtpKA8&t=727s og Student prosjektet fra foreleser
     
 ## FruitLoggTableView
+
     
 # Oppgave 5
 ## FruitEmojiRain
