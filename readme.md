@@ -16,6 +16,14 @@
     
 # Oppgave 3
 ## FruitCollectionView
+* Med inspirasjon fra youtube, har jeg laget CollectionView med 3 seksjoner. Jeg valgte å ikke gjøre denne delen dynamisk siden det finnes kun 3 forksjellige kategorier. I de senere metodene, så har jeg en switch for sjekke hvilken sjeksjon jeg er i for å gi dem riktig data. Hver seksjon har en gitt header tekst. Klassene og identifier for header og celler, har jeg angit i storyboard.[^4] 
+
+    Når man trykker på en celle så jeg går tilbake til FruitTableView fra oppg.1 hvor jeg endrer url varibalem til et nytt api kall med gitt type og navnet av typen.
+* Siden det er mange frukter under samme kategori, vil jeg kunne få duplikat celler med samme navn. For å fikse dette har jeg benyttet meg av Set for å gjøre de unike, også konverterer jeg dem til en array for å kunne bruke indexPath.row på de.[^5]
+
+[^4]: https://www.youtube.com/watch?v=y1uXXVUu43o&t=1979s, https://www.youtube.com/watch?v=TQOhsyWUhwg&t=1048s
+[^5]: https://stackoverflow.com/questions/27624331/unique-values-of-array-in-swift
+
     
 # Oppgave 4
 ## FruitLogg presistence & FruitDetailView
