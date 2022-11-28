@@ -31,9 +31,9 @@
 
     Jeg har valgt å formatere dato feltet til norsk dato og tid format.[^7]
     
-    Insperasjon custom alert:
-        - https://www.youtube.com/watch?v=670h22_ZsvY&t=1432s
-        - https://www.youtube.com/watch?v=fnq4wEDeQqA&t=531s 
+Insperasjon custom alert:
+- https://www.youtube.com/watch?v=670h22_ZsvY&t=1432s
+- https://www.youtube.com/watch?v=fnq4wEDeQqA&t=531s 
 
 [^6]: https://stackoverflow.com/questions/49547677/swift-ios-adding-date-picker-to-an-alert-in-swift-to-be-saved-to-local-db-using
 [^7]: https://stackoverflow.com/questions/11151187/show-time-in-12-and-24-hour-format-in-uidatepicker-on-the-basis-of-app-settings
