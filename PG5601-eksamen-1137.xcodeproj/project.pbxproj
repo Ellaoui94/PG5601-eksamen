@@ -31,7 +31,6 @@
 		148A97BA292C2B660047FBBC /* FruitLoggTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A97B9292C2B660047FBBC /* FruitLoggTableViewCell.swift */; };
 		148A97C5292E8F5A0047FBBC /* FruitLoggSectionFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A97C3292E8F5A0047FBBC /* FruitLoggSectionFooterViewController.swift */; };
 		148A97C6292E8F5A0047FBBC /* FruitLoggSectionFooterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 148A97C4292E8F5A0047FBBC /* FruitLoggSectionFooterViewController.xib */; };
-		148A97C8292EDC850047FBBC /* FruitLoggSectionFooterCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A97C7292EDC850047FBBC /* FruitLoggSectionFooterCustomView.swift */; };
 		14E3FCE1292FBB45005A5908 /* FruitRainFall.sks in Resources */ = {isa = PBXBuildFile; fileRef = 14E3FCDF292FBB45005A5908 /* FruitRainFall.sks */; };
 		14E3FCE6292FDC61005A5908 /* EmojiRain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E3FCE5292FDC61005A5908 /* EmojiRain.swift */; };
 		14E3FCEC29327239005A5908 /* PG5601_eksamen_1137.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14E3FCEA29327239005A5908 /* PG5601_eksamen_1137.xcdatamodeld */; };
@@ -84,7 +83,6 @@
 		148A97B9292C2B660047FBBC /* FruitLoggTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitLoggTableViewCell.swift; sourceTree = "<group>"; };
 		148A97C3292E8F5A0047FBBC /* FruitLoggSectionFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitLoggSectionFooterViewController.swift; sourceTree = "<group>"; };
 		148A97C4292E8F5A0047FBBC /* FruitLoggSectionFooterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitLoggSectionFooterViewController.xib; sourceTree = "<group>"; };
-		148A97C7292EDC850047FBBC /* FruitLoggSectionFooterCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitLoggSectionFooterCustomView.swift; sourceTree = "<group>"; };
 		14E3FCDF292FBB45005A5908 /* FruitRainFall.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FruitRainFall.sks; sourceTree = "<group>"; };
 		14E3FCE5292FDC61005A5908 /* EmojiRain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRain.swift; sourceTree = "<group>"; };
 		14E3FCEB29327239005A5908 /* PG5601_eksamen_1137.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PG5601_eksamen_1137.xcdatamodel; sourceTree = "<group>"; };
@@ -220,7 +218,6 @@
 				148A97B9292C2B660047FBBC /* FruitLoggTableViewCell.swift */,
 				148A97C3292E8F5A0047FBBC /* FruitLoggSectionFooterViewController.swift */,
 				148A97C4292E8F5A0047FBBC /* FruitLoggSectionFooterViewController.xib */,
-				148A97C7292EDC850047FBBC /* FruitLoggSectionFooterCustomView.swift */,
 			);
 			path = FruitLoggTableView;
 			sourceTree = "<group>";
@@ -408,7 +405,6 @@
 				14409FFC291FD74100DB939C /* FruitTableView.swift in Sources */,
 				1440A03C29223AC100DB939C /* FruitCollectionViewHeaderReusableView.swift in Sources */,
 				1440A02E29201A1300DB939C /* FruitTableViewCell.swift in Sources */,
-				148A97C8292EDC850047FBBC /* FruitLoggSectionFooterCustomView.swift in Sources */,
 				148A97B8292C2B4A0047FBBC /* FruitLoggTableViewController.swift in Sources */,
 				14409FF8291FD74100DB939C /* AppDelegate.swift in Sources */,
 				14E3FCE6292FDC61005A5908 /* EmojiRain.swift in Sources */,
