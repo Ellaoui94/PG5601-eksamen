@@ -1,3 +1,5 @@
+## For dette prosjektet brukte jeg Xcode 13.4.1 og Apple Swift version 5.7
+
 # Oppgave 1
 ## FruitTableView & FruitData
 * Mtp. å få dataen som blir hentet fra api-et til å være globalsk, så har jeg et eget klasse med et statisk tomt array, og et satisk funksjon som fyller arrayet. Denne funksjonen har en clousre med @escaping for å kunne utføre en ny handling etter at den har fetchet. Jeg brukt denne clouseren mest for tableView.reloadData().[^2]
@@ -49,7 +51,7 @@ Insperasjon custom alert:
     Jeg har også valgt å sortere de etter dato, sånn at siste datoen kommer først.
 * Lengere nede i FruitLoggTableViewController klassen, har jeg lagt til en extension av UITableView for å legge til beskjed hvis loggen er tom.[^10]
 
-Inspirasjon for footere og headere: https://www.youtube.com/watch?v=sSNYinzvQh0&t=1389s
+Inspirasjon for footer og header: https://www.youtube.com/watch?v=sSNYinzvQh0&t=1389s
 
 [^9]: https://www.youtube.com/watch?v=iEigIJG7-ic&t=808s
 [^10]: https://stackoverflow.com/questions/15746745/handling-an-empty-uitableview-print-a-friendly-message
