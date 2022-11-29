@@ -106,15 +106,18 @@ class FruitDetailViewController: UIViewController {
     }
 
     @IBAction func didTapButton(){
+//        Bestemmer formatet og utsendet datePickeren skal ha før jeg legger den til i en Alert
         let myDatePicker: UIDatePicker = UIDatePicker()
         myDatePicker.locale = NSLocale(localeIdentifier: "no_NO") as Locale
         myDatePicker.timeZone = .current
         myDatePicker.preferredDatePickerStyle = .wheels
         myDatePicker.frame = CGRect(x: 0, y: 15, width: 270, height: 200)
         
+//        Tittelen kommer over datePickeren, så \n var nødvendig for å lage plass for den
         let alertController = UIAlertController(title: "When did you eat?\n\n\n\n\n\n\n", message: nil, preferredStyle: .alert)
            alertController.view.addSubview(myDatePicker)
            
+//        Lagrer dataen i Core og sender brukeren tilbake til forrige viewController, valgte å bruke [self] for å slippe å skrive self.nameString osv
         let selectAction = UIAlertAction(title: "Save", style: .default, handler: { [self] _ in
             let newFruitLogg = FruitLogg(context: context)
             

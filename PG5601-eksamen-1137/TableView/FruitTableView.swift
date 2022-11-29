@@ -12,12 +12,14 @@ import UIKit
 class FruitTableView: UIViewController{
     
     var fruitCell = "fruitCell"
+    
+//    Denne url-en skal kunne forandres på til et annet api kall
     var url = "https://fruityvice.com/api/fruit/all"
     
+//    Family som key, og et random farge som value
     var fruitMap = [String : UIColor]()
     
     @IBOutlet var tableView: UITableView!
-    
     
     override func viewWillAppear(_ animated: Bool) {
         FruitData.frutisJSON(url: url, viewController: self, completed: {
@@ -55,6 +57,7 @@ extension FruitTableView : UITableViewDataSource, UITableViewDelegate{
         
         cell.fruitName.text = fruit.name
         
+//      Hvis en key med gitt familie ikke har fått farge enda, gi den et nytt random farge
         if (fruitMap.index(forKey: fruit.family) == nil){
             fruitMap[fruit.family] = generateRandomColor()
         }
@@ -70,7 +73,6 @@ extension FruitTableView : UITableViewDataSource, UITableViewDelegate{
         let viewController = storyboard.instantiateViewController(withIdentifier: "FruitDetailViewController") as! FruitDetailViewController
         let fruitsData = FruitData.fruits[indexPath.row]
         
-                
         viewController.nameString = fruitsData.name
         viewController.familyString = fruitsData.family
         viewController.genusString = fruitsData.genus

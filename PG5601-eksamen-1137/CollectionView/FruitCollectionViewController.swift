@@ -13,6 +13,7 @@ class FruitCollectionViewController: UIViewController {
     var fruitCell = "fruitCell"
     var fruitHeaderName = "fruitHeaderName"
     
+//    Siden url-en i FruitTableView skal forandres, måtte jeg få denne klassen til å bruke sitt eget url
     var url = "https://fruityvice.com/api/fruit/all"
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,6 +31,7 @@ class FruitCollectionViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         
+//        For å slippe å få duplikat verdier
         let genusMap = Array(Set(FruitData.fruits.map{ $0.genus }))
         sortedGenus.append(contentsOf: genusMap)
         
@@ -37,6 +39,7 @@ class FruitCollectionViewController: UIViewController {
         sortedFamily.append(contentsOf: familyMap)
         
         let orderMap = Array(Set(FruitData.fruits.map{$0.order}))
+//       En av Order-ene heter "None", den ønsket jeg ikke å ha med
         orderMap.forEach { order in
                 if !(order == "None"){
                 sortedOrder.append(order)
@@ -96,6 +99,8 @@ extension FruitCollectionViewController : UICollectionViewDataSource, UICollecti
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         
+//        Endrer url propertien til et nytt kall med gitt type og param(navnet på cellen som blir valgt)
+        
         let param: String
         let type: String
 
@@ -114,9 +119,9 @@ extension FruitCollectionViewController : UICollectionViewDataSource, UICollecti
             param = "No param"
         }
 
-        let viewController = storyboard.instantiateViewController(withIdentifier: "FruitTableView") as! FruitTableView
-        viewController.url = "https://fruityvice.com/api/fruit/\(type)/\(param)"
+        let fruitTableView = storyboard.instantiateViewController(withIdentifier: "FruitTableView") as! FruitTableView
+        fruitTableView.url = "https://fruityvice.com/api/fruit/\(type)/\(param)"
 
-        show(viewController, sender: nil)
+        show(fruitTableView, sender: nil)
     }
 }
