@@ -144,9 +144,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Y6-Z8-RlB">
-                                <rect key="frame" x="20" y="841" width="103" height="31"/>
+                                <rect key="frame" x="20" y="841" width="88" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Make it rain!">
+                                <buttonConfiguration key="configuration" style="filled" title="Replay🔄">
                                     <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
                                 </buttonConfiguration>
                                 <connections>

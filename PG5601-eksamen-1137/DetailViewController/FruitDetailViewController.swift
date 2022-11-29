@@ -36,7 +36,7 @@ class FruitDetailViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
         name.text = nameString
         family.text = familyString
         order.text = orderString
@@ -47,6 +47,7 @@ class FruitDetailViewController: UIViewController {
         caloreis.text = "\(caloreisDouble)"
         sugar.text = "\(sugarDouble)"
         
+//        For å animere labelen sitt synlighet
         sugarAlert.alpha = 0
         
         if sugarDouble > 10 {
@@ -56,6 +57,8 @@ class FruitDetailViewController: UIViewController {
             }, completion: nil)
         }
 
+//      Legger til viewet som er i EmojiRain inn i dette viewet
+        
         emojiRain = EmojiRain(view: self.view)
         emojiRain.fruitName = nameString
         

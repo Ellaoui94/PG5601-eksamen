@@ -41,7 +41,7 @@ class EmojiRain {
     
     // MARK: - Methods
     init(view: UIView) {
-        // Henter main view
+        // Henter viewet som blir satt inn i initilaizeren 
         self.view = view
         let width = self.view.frame.width
         

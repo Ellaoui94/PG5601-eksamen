@@ -48,11 +48,13 @@ Insperasjon custom alert:
 ## FruitLoggTableView
 * For å kunne ha spiste frukter med samme dato i samme seksjon. Prøvde jeg meg først på å lage en dictionary, på samme måte som jeg gjorde med fargene. Men så kom jeg borti i en video som viser at man kan lage et nytt struct med to felter, dato og array av spiste frukt. Så kan jeg lage et array av strukten og appende nytt dato og frukt. Hvis datoen finnes allerede, append kun frukten.[^9]
 
+    For å kunne fjerne tidspunkt fra datoen som blir hentet fra loggen brukte jeg en funksjon som henter bare år, måned og dag. -> https://stackoverflow.com/a/51638443
     Jeg har også valgt å sortere de etter dato, sånn at siste datoen kommer først.
 * Lengere nede i FruitLoggTableViewController klassen, har jeg lagt til en extension av UITableView for å legge til beskjed hvis loggen er tom.[^10]
 
-Inspirasjon for footer og header: https://www.youtube.com/watch?v=sSNYinzvQh0&t=1389s
-    https://github.com/jrasmusson/swift-arcade/blob/master/UIKit/UITableView/HeaderFooterNib/README.md
+Inspirasjon for footer og header: 
+- https://www.youtube.com/watch?v=sSNYinzvQh0&t=1389s
+- https://github.com/jrasmusson/swift-arcade/blob/master/UIKit/UITableView/HeaderFooterNib/README.md
 
 [^9]: https://www.youtube.com/watch?v=iEigIJG7-ic&t=808s
 [^10]: https://stackoverflow.com/a/45157417 -> Tekst for tom tableView
@@ -69,11 +71,13 @@ Inspirasjon for footer og header: https://www.youtube.com/watch?v=sSNYinzvQh0&t=
     4. Lagt til UILabel i UIView[^14]
     5. Lagt til animasjon for å kunne skalere labelen fra 2 til 0.1[^15]
     
-[^11]: https://github.com/kirankunigiri/Swift-Rain/tree/master/Swift-Rain    
-[^12]: https://stackoverflow.com/a/33116370
+* I DetailView klassen fra oppg.2, sender jeg inn view i initilaizeren til EmojiRain. Så sender jeg videre navnet og emojien av frukten. Jeg har med .start() funksjonen både i viewDidLoad, og i knappen for å animasjonen på nytt.
+    
+[^11]: https://github.com/kirankunigiri/Swift-Rain/tree/master/Swift-Rain -> Regn animasjon  
+[^12]: https://stackoverflow.com/a/33116370 -> Index i en for loop
 [^13]: https://stackoverflow.com/a/44689102 -> -30 dager, https://www.hackingwithswift.com/example-code/language/how-to-check-whether-a-date-is-inside-a-date-range -> Lage tidsperiode
-[^14]: https://stackoverflow.com/a/37738752
-[^15]: https://medium.com/livefront/animating-font-size-in-uilabels-fb6fd273a5f3
+[^14]: https://stackoverflow.com/a/37738752 -> Label i et UIView
+[^15]: https://medium.com/livefront/animating-font-size-in-uilabels-fb6fd273a5f3 -> Skalering av label
 
 # Kilder og insperasjon 
 
