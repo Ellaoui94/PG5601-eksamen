@@ -72,7 +72,7 @@ Inspirasjon for footer og header:
     4. Lagt til UILabel i UIView[^14]
     5. Lagt til animasjon for å kunne skalere labelen fra 2 til 0.1[^15]
     
-* I DetailView klassen fra oppg.2, sender jeg inn view i initilaizeren til EmojiRain. Så sender jeg videre navnet og emojien av frukten. Jeg har med .start() funksjonen både i viewDidLoad, og i knappen for å animasjonen på nytt.
+* I DetailView klassen fra oppg.2, sender jeg inn view i initilaizeren til EmojiRain. Så sender jeg videre navnet og emojien av frukten. Jeg har med .start() funksjonen både i viewDidLoad, og i knappen for å starte animasjonen på nytt.
     
 [^11]: https://github.com/kirankunigiri/Swift-Rain/tree/master/Swift-Rain -> Regn animasjon  
 [^12]: https://stackoverflow.com/a/33116370 -> Index i en for loop
@@ -82,6 +82,6 @@ Inspirasjon for footer og header:
 
 # Kilder og insperasjon 
 - https://www.youtube.com/watch?v=Nx3qPQ_qOFM&t=7s -> For å ha med både tab bar og navigasjons bar
-- https://www.youtube.com/watch?v=7iT9fueKCJM&t=358s, https://www.youtube.com/watch?v=pwkpyzn7EOM&t=315s & øvingstimene med foreleser -> For å forstå å kunne bruke constraints
+- https://www.youtube.com/watch?v=7iT9fueKCJM&t=358s, https://www.youtube.com/watch?v=pwkpyzn7EOM&t=315s & øvingstimene med foreleser -> For å forstå og kunne bruke constraints
 - https://stackoverflow.com/a/57155886 -> For å vise en alert når nettet ikke er tilkoblet 
 
