@@ -4,7 +4,6 @@
         
 * I fruitTableView, så har jeg asignet url-en til fruit/all og fetcher dataen før view-et dukker opp. I tillegg har jeg lagt til et et dictonary for farger hvor keyen er familien og value er en random gitt farge.[^1]
 
-###### Kilder og insperasjon 
 [^1]: https://stackoverflow.com/questions/55521000/how-to-generate-the-same-random-color-in-a-table-view-for-a-table-view-row-for-a
 [^2]: https://www.youtube.com/watch?v=8dn9HzNigm8&t=891s Student prosjektet fra foreleser
 
@@ -30,7 +29,7 @@
 ## FruitLogg presistence & FruitDetailView
 * Først så valgte jeg å bruke en custom alert view i en annen viewController. Men så bestmete jeg meg for å lage en simpel alert i detailViewController, med nil som funksjon for å avbryte, og lagring av loggen i tillegg til popViewController som funksjon når man trykker save. Dato og tid blir automatisk satt til det tidspunktet man trykker på spis frukt knappen.[^6]
 
-    Jeg har valgt å formatere dato feltet til norsk dato og tid format.[^7]
+    Jeg har valgt å bruke norsk dato og tid format.[^7]
 
 * For CoreData så har laged en entity som heter FruitLogg. FruitLogg har næringene, navn og dato som felter. Create NSMangedObject Subclass lager filer for meg slik at jeg bruke feltene i databasen. 
 
@@ -45,7 +44,19 @@ Insperasjon custom alert:
 [^8]: https://www.youtube.com/watch?v=rjHBINtpKA8&t=727s og Student prosjektet fra foreleser
     
 ## FruitLoggTableView
+* For å kunne ha spiste frukter med samme dato i samme seksjon. Prøvde jeg meg først på å lage en dictionary, på samme måte som jeg gjorde med fargene. Men så kom jeg borti i en video som viser at man kan lage et nytt struct med to felter, dato og array av spiste frukt. Så kan jeg lage et array av strukten og appende nytt dato og frukt. Hvis datoen finnes allerede, append kun frukten.[^9]
+
+    Jeg har også valgt å sortere de etter dato, sånn at siste datoen kommer først.
+* Lengere nede i FruitLoggTableViewController klassen, har jeg lagt til en extension av UITableView for å legge til beskjed hvis loggen er tom.[^10]
+
+Inspirasjon for footere og headere: https://www.youtube.com/watch?v=sSNYinzvQh0&t=1389s
+
+[^9]: https://www.youtube.com/watch?v=iEigIJG7-ic&t=808s
+[^10]: https://stackoverflow.com/questions/15746745/handling-an-empty-uitableview-print-a-friendly-message
 
     
 # Oppgave 5
 ## FruitEmojiRain
+
+# Kilder og insperasjon 
+

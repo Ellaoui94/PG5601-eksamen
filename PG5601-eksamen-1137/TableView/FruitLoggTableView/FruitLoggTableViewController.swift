@@ -18,9 +18,10 @@ class FruitLoggTableViewController: UIViewController {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
+// Ny struct for loggen
     var fruitLoggSectionArray = [FruitLoggSection]()
     
-    
+// For å bli kvitt tid fra Date
     func stripTime(from originalDate: Date) -> Date {
         let components = Calendar.current.dateComponents([.year, .month, .day], from: originalDate)
         let date = Calendar.current.date(from: components)
@@ -34,9 +35,10 @@ class FruitLoggTableViewController: UIViewController {
         return formatter
     }()
     
-    
     override func viewWillAppear(_ animated: Bool) {
+//    Hvis man går ut og inn igjen fra siden så har arrayet allerede verdier,       disse må slettes for å ungå duplikat
         fruitLoggSectionArray.removeAll()
+        
         do{
            let fruitLogg = try context.fetch(FruitLogg.fetchRequest())
             
@@ -54,6 +56,7 @@ class FruitLoggTableViewController: UIViewController {
             alert.addAction(cancelAction)
             self.present(alert, animated: true, completion: nil)
         }
+        
         fruitLoggSectionArray = fruitLoggSectionArray.sorted(by: {$0.date > $1.date})
         self.tableView.reloadData()
     }
@@ -70,6 +73,7 @@ class FruitLoggTableViewController: UIViewController {
 extension FruitLoggTableViewController : UITableViewDataSource, UITableViewDelegate{
     
     func numberOfSections(in tableView: UITableView) -> Int {
+//        .setEmptyMessage er lagt til nederst som en extension av UITableView
         if fruitLoggSectionArray.count == 0 {
             self.tableView.setEmptyMessage("No fruit has been eaten yet..")
         } else {
@@ -87,6 +91,7 @@ extension FruitLoggTableViewController : UITableViewDataSource, UITableViewDeleg
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+//      laget en XIB fil som jeg har koblet til denne klassen
         let footer = FruitLoggSectionFooterViewController()
         
         var caloriesSum = 0.0
@@ -103,6 +108,7 @@ extension FruitLoggTableViewController : UITableViewDataSource, UITableViewDeleg
             sugarSum += fruit.sugar
         }
         
+//      Formaterer summen for å droppe å ha med for mange siffre: https://stackoverflow.com/a/27339287
         footer.caloriesLabel.text = "Calories: \(String(format: "%.2f", caloriesSum))"
         footer.carboHydratesLabel.text = "Carbs: \(String(format: "%.2f", carbohydratesSum))"
         footer.fatLabel.text = "Fat: \(String(format: "%.2f", fatSum))"
@@ -144,13 +150,5 @@ extension UITableView {
     func restore() {
         self.backgroundView = nil
         self.separatorStyle = .singleLine
-    }
-}
-
-extension Double {
-    /// Rounds the double to decimal places value
-    func rounded(toPlaces places:Int) -> Double {
-        let divisor = pow(10.0, Double(places))
-        return (self * divisor).rounded() / divisor
     }
 }
