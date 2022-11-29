@@ -95,6 +95,8 @@ class FruitDetailViewController: UIViewController {
             emojiRain.emoji = "🍍"
         case "Kiwi":
             emojiRain.emoji = "🥝"
+        case "Avocado":
+            emojiRain.emoji = "🥑"
         default:
             emojiRain.emoji = "💯"
         }
