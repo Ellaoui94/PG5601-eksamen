@@ -24,7 +24,6 @@ class FruitDetailViewController: UIViewController {
     
     var emojiRain: EmojiRain!
 
-
     var nameString = ""
     var familyString = ""
     var orderString = ""
@@ -56,38 +55,7 @@ class FruitDetailViewController: UIViewController {
                 self.sugarAlert.alpha = 1
             }, completion: nil)
         }
-        
-        func generateRandomX() -> Double {
-            
-            let sideOne : Double = 1
-            let sideTwo : Double = view.frame.width
-            
-            let xResult = Double.random(in: sideOne...sideTwo-5)
-               return xResult
-           }
-        
-//        let emojiLabel = UILabel(frame: CGRect(x: generateRandomX(), y: -25, width: 25, height: 25))
-//        emojiLabel.font = UIFont.systemFont(ofSize: 20)
-//        emojiLabel.text = "✌️"
-//        self.view.addSubview(emojiLabel)
-//
-//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()) {
-//            () -> Void in
-//            UIView.animate(withDuration: TimeInterval.random(in: 3...5), delay: TimeInterval.random(in: 0...1)) {
-//                UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.1) {
-//                    emojiLabel.transform = CGAffineTransform(scaleX: 2, y: 2)
-//                }
-//
-//                UIView.addKeyframe(withRelativeStartTime: 0.01, relativeDuration: 0.99) {
-//                    let one = CGAffineTransform(translationX: 0, y: self.view.frame.height + 50)
-//                    let two = CGAffineTransform(rotationAngle: CGFloat.random(in: -0.15...0.15))
-//
-//                    emojiLabel.transform = one.concatenating(two )
-//                }
-//            }
-//        }
-        
-        
+
         emojiRain = EmojiRain(view: self.view)
         emojiRain.fruitName = nameString
         

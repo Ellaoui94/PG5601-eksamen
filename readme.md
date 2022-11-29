@@ -6,14 +6,14 @@
         
 * I fruitTableView, så har jeg asignet url-en til fruit/all og fetcher dataen før view-et dukker opp. I tillegg har jeg lagt til et et dictonary for farger hvor keyen er familien og value er en random gitt farge.[^1]
 
-[^1]: https://stackoverflow.com/questions/55521000/how-to-generate-the-same-random-color-in-a-table-view-for-a-table-view-row-for-a
-[^2]: https://www.youtube.com/watch?v=8dn9HzNigm8&t=891s Student prosjektet fra foreleser
+[^1]: https://stackoverflow.com/a/55521230 -> for å gi samme farge for hver familie
+[^2]: https://www.youtube.com/watch?v=8dn9HzNigm8&t=891s & Student prosjektet fra foreleser
 
 # Oppgave 2
 ## FruitDetailView
 * For animasjon av bakgrunn og tekst, har jeg lagt til en UIVew.animte som repeteres hele tiden. For at det ikke skal være irriterende for øyet, så har jeg forsøkt å ha duration på 0.8. Jeg måtte også ha med .allowUserInteraction for at man skal kunne trykke på knapper mens animasjonen er i gang.[^3] 
 
-[^3]: https://stackoverflow.com/questions/60152701/uiview-animation-options-repeat-count , https://stackoverflow.com/questions/6224468/blinking-effect-on-uilabel , https://stackoverflow.com/questions/49547677/swift-ios-adding-date-picker-to-an-alert-in-swift-to-be-saved-to-local-db-using
+[^3]: https://stackoverflow.com/a/60152901 -> For reptitisjons animasjon , https://stackoverflow.com/a/21558744 -> For animasjon på tekst 
     
 # Oppgave 3
 ## FruitCollectionView
@@ -24,7 +24,7 @@
 * Siden det er mange frukter under samme kategori, vil jeg kunne få duplikat celler med samme navn. For å fikse dette har jeg benyttet meg av Set for å gjøre de unike, også konverterer jeg dem til en array for å kunne bruke indexPath.row på de.[^5]
 
 [^4]: https://www.youtube.com/watch?v=y1uXXVUu43o&t=1979s, https://www.youtube.com/watch?v=TQOhsyWUhwg&t=1048s
-[^5]: https://stackoverflow.com/questions/27624331/unique-values-of-array-in-swift
+[^5]: https://stackoverflow.com/a/27624476 -> For unike verdier
 
     
 # Oppgave 4
@@ -41,9 +41,9 @@ Insperasjon custom alert:
 - https://www.youtube.com/watch?v=670h22_ZsvY&t=1432s
 - https://www.youtube.com/watch?v=fnq4wEDeQqA&t=531s 
 
-[^6]: https://stackoverflow.com/questions/49547677/swift-ios-adding-date-picker-to-an-alert-in-swift-to-be-saved-to-local-db-using
-[^7]: https://stackoverflow.com/questions/11151187/show-time-in-12-and-24-hour-format-in-uidatepicker-on-the-basis-of-app-settings
-[^8]: https://www.youtube.com/watch?v=rjHBINtpKA8&t=727s og Student prosjektet fra foreleser
+[^6]: https://stackoverflow.com/a/56607279 -> For datePicker i en alertView
+[^7]: https://stackoverflow.com/a/33912837 - For tidsformat
+[^8]: https://www.youtube.com/watch?v=rjHBINtpKA8&t=727s & Student prosjektet fra foreleser
     
 ## FruitLoggTableView
 * For å kunne ha spiste frukter med samme dato i samme seksjon. Prøvde jeg meg først på å lage en dictionary, på samme måte som jeg gjorde med fargene. Men så kom jeg borti i en video som viser at man kan lage et nytt struct med to felter, dato og array av spiste frukt. Så kan jeg lage et array av strukten og appende nytt dato og frukt. Hvis datoen finnes allerede, append kun frukten.[^9]
@@ -54,11 +54,12 @@ Insperasjon custom alert:
 Inspirasjon for footer og header: https://www.youtube.com/watch?v=sSNYinzvQh0&t=1389s
 
 [^9]: https://www.youtube.com/watch?v=iEigIJG7-ic&t=808s
-[^10]: https://stackoverflow.com/questions/15746745/handling-an-empty-uitableview-print-a-friendly-message
+[^10]: https://stackoverflow.com/a/45157417 -> Tekst for tom tableView
 
     
 # Oppgave 5
 ## FruitEmojiRain
+* 
 
 # Kilder og insperasjon 
 

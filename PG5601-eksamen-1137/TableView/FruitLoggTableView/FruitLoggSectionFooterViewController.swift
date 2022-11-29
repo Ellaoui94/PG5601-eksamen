@@ -36,6 +36,8 @@ class FruitLoggSectionFooterViewController: UIView {
         let bundle = Bundle(for: FruitLoggSectionFooterViewController.self)
         bundle.loadNibNamed("FruitLoggSectionFooterViewController", owner: self, options: nil)
         addSubview(contentView)
+        
+//      Lagt til constraints både på storyBoard og programatisk her.
 
         contentView.translatesAutoresizingMaskIntoConstraints = false
         contentView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true

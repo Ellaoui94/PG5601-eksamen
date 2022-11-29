@@ -1,9 +1,8 @@
 //
-//  WaterController.swift
-//  Physics
+//  FruitDetailViewViewController.swift
+//  PG5601-eksamen-1137
 //
-//  Created by Kiran Kunigiri on 7/18/15.
-//  Copyright (c) 2015 Kiran Kunigiri. All rights reserved.
+//  Created by Bruker on 24/11/2022.
 //
 
 import Foundation
@@ -33,7 +32,6 @@ class EmojiRain {
     private var animator: UIDynamicAnimator!
     private var gravityBehavior = UIGravityBehavior()
     private var timer1 = Timer()
-    private var timer2 = Timer()
     
     // MARK: State
     var isAnimating = false
@@ -43,40 +41,37 @@ class EmojiRain {
     
     // MARK: - Methods
     init(view: UIView) {
-        // Get main view
+        // Henter main view
         self.view = view
         let width = self.view.frame.width
         
-        // Initialize Values for position of raindrops and space between them
+        // Setter posisjon for emojiene og setter avstand mellom dem
         startX = 20
         startY = -60
         distanceBetweenEachDrop = width * 0.048
         distanceBetweenSameRow = distanceBetweenEachDrop * 2
         
-        // Initialize animator
         animator = UIDynamicAnimator(referenceView: self.view)
         gravityBehavior.gravityDirection.dy = 2
         animator.addBehavior(gravityBehavior)
     }
     
-    /** Starts the rain animation */
     func start() {
         isAnimating = true
-        // Timer that calls spawnFirst method every 0.2 second. Produces rain drops every .2 second in 1st and 2rd row
+        // Kaller på funksjonen som får emojiene til å regne ned  hvert .2 sekund.
         timer1 = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(spawnFirst), userInfo: nil, repeats: false)
-        // Timer that calls startSecond method after .1 seconds. Creates a slight delay for 2nd and 4th rows
-       
     }
     
     // MARK: - Helper Methods
     
-    /** Manages all drops in rain */
     private func addGravity(array: [UIView]) {
-        // Adds gravity to every drop in array
+
         for drop in array {
             gravityBehavior.addItem(drop)
         }
-        // Checks if each drop is below the bottom of screen. Then removes its gravity, hides it, and removes from array
+        
+        // Ser etter om hver emoji er under skjermen, hvis ja så fjernes både graviteten fra de og fra
+        // Siden jeg ikke kunne bruke index(i) med drops.count, så måtte jeg ha med .enumarated().reversed()
         for (i, _) in drops.enumerated().reversed() {
             if drops[i].frame.origin.y > self.view.frame.height {
                 gravityBehavior.removeItem(drops[i])
@@ -86,58 +81,65 @@ class EmojiRain {
         }
     }
     
-    /** Spawns water drops */
     @objc private func spawnFirst() {
         do{
            fruitLoggArray = try context.fetch(FruitLogg.fetchRequest())
             
             }catch{
-            print("ohno")
+            print("No data")
         }
-        //creates array of UIViews (drops)
+        
+//      Trenger en array av UIViews for å ha emojiene i
         var thisArray: [UIView] = []
         
-        //number of col of drops
-        //for each drop in a row
         fruitLoggArray.forEach { fruitLogg in
+//          Lager en tidsperiode fra -30 dager til dagens dato
             let now = Date.now
             let fromDate = Calendar.current.date(byAdding: .day, value: -30, to: now)
             let range = fromDate!...now
             
+//          Hvis navnet til frukten finnes i loggen og datoen er innenfor tidsperioden, så vis emoji
             if fruitLogg.name == fruitName && range.contains(fruitLogg.dateLogg!){
                 
+//              Nye y og x verdier for view-et for når de faller ned
                 let newY = CGFloat(-200 + Int(arc4random_uniform(UInt32(150))))
                 let newX = CGFloat(10 + Int(arc4random_uniform(UInt32(350))))
+                
                 let drop = UIView()
-                let label = UILabel(frame: CGRect(x: 0,y: 0,width: 100,height: 23))  //create a label with a size
+                
+                let label = UILabel(frame: CGRect(x: 0,y: 0,width: 100,height: 23))
+                
                 label.text = emoji
+//                Gir label skalerings verdier som starter med 2
                 label.transform = label.transform.scaledBy(x: 2, y: 2);
                 UIView.animate(withDuration: 1.8, animations: {
+//                    Mens animasjonen kjører, så scaleres label ned til 0.1
                     label.transform = label.transform.scaledBy(x: 0.1, y: 0.1);
                 })
+                
                 drop.addSubview(label)
+                
                 drop.frame = CGRect(x: newX, y: newY, width: 1.0, height: 50.0)
-                // Add the drop to main view
+
                 self.view.addSubview(drop)
-                // Add the drop to the drops array
+
+                // For å senere få fjernet droppene som ble lagt til
                 self.drops.append(drop)
-                // Add the drop to thisArray
+
                 thisArray.append(drop)
             }
         }
       
-        // Adds gravity to the drops that were just created
+        // For å gi gravitet til array
         addGravity(array: thisArray)
     }
     
-    /** Stops the water animation */
     func stop() {
         isAnimating = false
-        // Remove all objects from drops array
+
         drops.removeAll()
-        // Stop all timers
+        // Stopper timmeren som kjører hvert .2 sekund siden arrayet er tomt
         timer1.invalidate()
-        timer2.invalidate()
     }
     
 }
