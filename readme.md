@@ -71,9 +71,7 @@ Inspirasjon for footer og header: https://www.youtube.com/watch?v=sSNYinzvQh0&t=
     
 [^11]: https://github.com/kirankunigiri/Swift-Rain/tree/master/Swift-Rain    
 [^12]: https://stackoverflow.com/a/33116370
-[^13]: https://stackoverflow.com/a/44689102 -> -30 dager,
-
-https://www.hackingwithswift.com/example-code/language/how-to-check-whether-a-date-is-inside-a-date-range -> Lage tidsperiode
+[^13]: https://stackoverflow.com/a/44689102 -> -30 dager, https://www.hackingwithswift.com/example-code/language/how-to-check-whether-a-date-is-inside-a-date-range -> Lage tidsperiode
 [^14]: https://stackoverflow.com/a/37738752
 [^15]: https://medium.com/livefront/animating-font-size-in-uilabels-fb6fd273a5f3
 
