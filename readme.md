@@ -81,4 +81,7 @@ Inspirasjon for footer og header:
 [^15]: https://medium.com/livefront/animating-font-size-in-uilabels-fb6fd273a5f3 -> Skalering av label
 
 # Kilder og insperasjon 
+- https://www.youtube.com/watch?v=Nx3qPQ_qOFM&t=7s -> For å ha med både tab bar og navigasjons bar
+- https://www.youtube.com/watch?v=7iT9fueKCJM&t=358s, https://www.youtube.com/watch?v=pwkpyzn7EOM&t=315s & øvingstimene med foreleser -> For å forstå å kunne bruke constraints
+- https://stackoverflow.com/a/57155886 -> For å vise en alert når nettet ikke er tilkoblet 
 
