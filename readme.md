@@ -49,6 +49,7 @@ Insperasjon custom alert:
 * For å kunne ha spiste frukter med samme dato i samme seksjon. Prøvde jeg meg først på å lage en dictionary, på samme måte som jeg gjorde med fargene. Men så kom jeg borti i en video som viser at man kan lage et nytt struct med to felter, dato og array av spiste frukt. Så kan jeg lage et array av strukten og appende nytt dato og frukt. Hvis datoen finnes allerede, append kun frukten.[^9]
 
     For å kunne fjerne tidspunkt fra datoen som blir hentet fra loggen brukte jeg en funksjon som henter bare år, måned og dag. -> https://stackoverflow.com/a/51638443
+    
     Jeg har også valgt å sortere de etter dato, sånn at siste datoen kommer først.
 * Lengere nede i FruitLoggTableViewController klassen, har jeg lagt til en extension av UITableView for å legge til beskjed hvis loggen er tom.[^10]
 
