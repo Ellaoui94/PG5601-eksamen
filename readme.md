@@ -52,6 +52,7 @@ Insperasjon custom alert:
 * Lengere nede i FruitLoggTableViewController klassen, har jeg lagt til en extension av UITableView for å legge til beskjed hvis loggen er tom.[^10]
 
 Inspirasjon for footer og header: https://www.youtube.com/watch?v=sSNYinzvQh0&t=1389s
+    https://github.com/jrasmusson/swift-arcade/blob/master/UIKit/UITableView/HeaderFooterNib/README.md
 
 [^9]: https://www.youtube.com/watch?v=iEigIJG7-ic&t=808s
 [^10]: https://stackoverflow.com/a/45157417 -> Tekst for tom tableView
@@ -59,7 +60,20 @@ Inspirasjon for footer og header: https://www.youtube.com/watch?v=sSNYinzvQh0&t=
     
 # Oppgave 5
 ## FruitEmojiRain
-* 
+* For å få til regn med emojis, benyttet jeg meg av en løsning hvor det er snakk om regndroper. Jeg gikk gjennom løsningen og gjorde om de nødvendige forandringene for at det skulle passe med prosjektet mitt.[^11]
+    
+    Koden er forklart med kommentarer, men bare for å nevne forandringene som jeg har lagt til: 
+    1. For loopen som skal slette vekk emojiene etter å ha gå ut av skjermens størrelse måtte jeg endre for å få tak i indexen.[^12]
+    2. Henter data fra coreData.
+    3. Lager tidsperiode fra -30 dager til dagens dato.[^13]
+    4. Lagt til UILabel i UIView[^14]
+    5. Lagt til animasjon for å kunne skalere labelen fra 2 til 0.1[^15]
+    
+[^11]: https://github.com/kirankunigiri/Swift-Rain/tree/master/Swift-Rain    
+[^12]: https://stackoverflow.com/a/33116370
+[^13]: https://stackoverflow.com/a/44689102 -> -30 dager, https://www.hackingwithswift.com/example-code/language/how-to-check-whether-a-date-is-inside-a-date-range -> Lage tidsperiode
+[^14]: https://stackoverflow.com/a/37738752
+[^15]: https://medium.com/livefront/animating-font-size-in-uilabels-fb6fd273a5f3
 
 # Kilder og insperasjon 
 

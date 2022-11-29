@@ -2,7 +2,7 @@
 //  FruitDetailViewViewController.swift
 //  PG5601-eksamen-1137
 //
-//  Created by Bruker on 24/11/2022.
+//  Created by Bruker on 26/11/2022.
 //
 
 import Foundation
@@ -70,7 +70,8 @@ class EmojiRain {
             gravityBehavior.addItem(drop)
         }
         
-        // Ser etter om hver emoji er under skjermen, hvis ja så fjernes både graviteten fra de og fra
+        // Ser etter om hver emoji er under skjermen, hvis ja så fjernes graviteten fra de og de blir tatt vek fra arrayet
+        
         // Siden jeg ikke kunne bruke index(i) med drops.count, så måtte jeg ha med .enumarated().reversed()
         for (i, _) in drops.enumerated().reversed() {
             if drops[i].frame.origin.y > self.view.frame.height {
@@ -123,14 +124,14 @@ class EmojiRain {
 
                 self.view.addSubview(drop)
 
-                // For å senere få fjernet droppene som ble lagt til
+                // For å få gjort UIView-et som ble laged inne her tilgjengelig for andre klasser
                 self.drops.append(drop)
 
                 thisArray.append(drop)
             }
         }
       
-        // For å gi gravitet til array
+        // For å gi gravitet til array og senere få fjernet droppene som ble lagt til
         addGravity(array: thisArray)
     }
     
