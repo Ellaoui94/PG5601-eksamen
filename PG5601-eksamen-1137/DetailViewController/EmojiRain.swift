@@ -67,7 +67,7 @@ class EmojiRain {
     private func addGravity(array: [UIView]) {
 
         for drop in array {
-//            For å gi emojiene en liten delay før de faller ned 
+//            For å gi emojiene en liten delay før de faller ned
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                 self.gravityBehavior.addItem(drop)
             }

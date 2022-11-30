@@ -13,6 +13,8 @@
 ## FruitDetailView
 * For animasjon av bakgrunn og tekst, har jeg lagt til en UIVew.animte som repeteres hele tiden. For at det ikke skal være irriterende for øyet, så har jeg forsøkt å ha duration på 0.8. Jeg måtte også ha med .allowUserInteraction for at man skal kunne trykke på knapper mens animasjonen er i gang.[^3] 
 
+* Constraints på denne siden burde fungere bra. Men på landscape så kommer Fat labelen over de andre. Les om det er leslig, så var planen å flytte og justere på den, men jeg rakk ikke å fullføre det desverre 
+
 [^3]: https://stackoverflow.com/a/60152901 -> For reptitisjons animasjon , https://stackoverflow.com/a/21558744 -> For animasjon på tekst 
     
 # Oppgave 3
